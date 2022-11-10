@@ -25,12 +25,17 @@ services:
     volumes:
       - /app/node_modules
       - ./backend:/app
-    environment: 
-      MYSQL_HOST: mysql
-      MYSQL_USER: root 
-      MYSQL_ROOT_PASSWORD: nhj19877
-      MYSQL_DATABASE: myapp
-      MYSQL_PORT: 3306   
+    environment:
+      RDS_HOSTNAME: mysql
+      RDS_USERNAME: root
+      RDS_PASSWORD: nhj19877
+      RDS_DB_NAME: myapp
+      RDS_PORT: 3306
+      #MYSQL_HOST: mysql
+      #MYSQL_USER: root 
+      #MYSQL_ROOT_PASSWORD: nhj19877
+      #MYSQL_DATABASE: myapp
+      #MYSQL_PORT: 3306   
 
 
 
